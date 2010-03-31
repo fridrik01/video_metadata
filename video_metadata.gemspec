@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fri\303\260rik \303\201smundsson"]
-  s.date = %q{2010-03-09}
+  s.date = %q{2010-03-20}
   s.description = %q{Currently handles imdb,tmdb and tvdb}
   s.email = %q{fridrik01@gmail.com}
   s.extra_rdoc_files = [
@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
      "lib/video_metadata/imdb.rb",
      "lib/video_metadata/tmdb.rb",
      "lib/video_metadata/tvdb.rb",
-     "pkg/video_metadata-0.1.0.gem",
      "test/test_helper.rb",
      "test/video_metadata/imdb_test.rb",
      "test/video_metadata/tmdb_test.rb",
