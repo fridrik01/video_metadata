@@ -2,11 +2,14 @@ module VideoMetadata
   module IMDBLookup
     def imdb( value )
       return nil if value == nil
+      return nil unless /tt(\d){7}/.match(value)
+      
       h = keyValueStringToHash(%x{imdb-get -l #{value} -a 2>/dev/null})
       [:title, :plot, :tagline, :cast].each do |v| 
         h[v] = HTMLEntities.new.decode(h[v]) # remove html entities, mapping to UTF-8 
-      end
+      end      
       return nil unless h[:id] == value # be sure that imdb-get succeeded    
+      return nil if h[:title].blank?
       
       return {        
         :value => h[:id],

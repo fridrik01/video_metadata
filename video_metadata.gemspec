@@ -5,18 +5,19 @@
 
 Gem::Specification.new do |s|
   s.name = %q{video_metadata}
-  s.version = "0.1.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fri\303\260rik \303\201smundsson"]
-  s.date = %q{2010-03-20}
+  s.date = %q{2010-04-13}
   s.description = %q{Currently handles imdb,tmdb and tvdb}
   s.email = %q{fridrik01@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
   s.files = [
-    ".project",
+    ".gitignore",
+     ".project",
      "README.rdoc",
      "Rakefile",
      "VERSION",

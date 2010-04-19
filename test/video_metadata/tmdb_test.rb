@@ -25,6 +25,10 @@ class TMDBTest < Test::Unit::TestCase
         assert_equal nil, VideoMetadata::Lookup::tmdb("")
         assert_equal nil, VideoMetadata::Lookup::tmdb(nil)
       end
+      
+      should "be able to fetch by imdb id" do
+        assert_equal "tt0115392", VideoMetadata::Lookup::imdb_lookup("tt0115392")[:imdbid]
+      end
     end
     
     context "get avatar movie" do
