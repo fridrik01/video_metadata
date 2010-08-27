@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fri\303\260rik \303\201smundsson"]
-  s.date = %q{2010-04-13}
+  s.date = %q{2010-06-02}
   s.description = %q{Currently handles imdb,tmdb and tvdb}
   s.email = %q{fridrik01@gmail.com}
   s.extra_rdoc_files = [
