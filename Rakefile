@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/frikkasoft/video_metadata"
     gem.authors = ["Friðrik Ásmundsson"]
     
+    gem.add_dependency('yayimdbs', '>= 0.1.7')
     gem.add_dependency('tmdb_party', '>= 0.4.1')
     gem.add_dependency('tvdb_party', '>= 0.3.2')
     gem.add_dependency('htmlentities', '>= 4.2.0')    
