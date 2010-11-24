@@ -16,7 +16,7 @@ class TMDBTest < Test::Unit::TestCase
       should "contains valid metadata" do                
         assert_equal "tt0115392", @metadata[:imdbid]
         assert_equal "2699", @metadata[:value]
-        assert_equal "Titanic", @metadata[:title]
+        assert_equal "Titanic.", @metadata[:title]
         assert_equal "1996", @metadata[:year]        
       end
       
