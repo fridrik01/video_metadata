@@ -15,7 +15,7 @@ module VideoMetadata
       
       tv_show = @@tvdb.get_series_by_id(tvdbid)
       return nil if tv_show == nil
-      episode = @@tvdb.get_episode(tv_show, season, episode)
+      episode = @@tvdb.get_episode(tv_show, season, episode)      
       return nil if episode == nil
       episode_to_hash(episode)
     end
@@ -53,7 +53,9 @@ module VideoMetadata
           :title => season.name,
           :plot => season.overview,
           :year => year.to_s,
-          :coverart => coverart
+          :coverart => coverart,
+          :runtime => season.runtime.to_i,
+          :raw => season
         }        
       end
       

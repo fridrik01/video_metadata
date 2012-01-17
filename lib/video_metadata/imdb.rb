@@ -8,7 +8,7 @@ module VideoMetadata
 
       info = nil
       begin
-        info = YayImdbs.scrap_movie_info( value.gsub(/^tt/, "") )              
+        info = YayImdbs.scrap_movie_info( value.gsub(/^tt/, "") )        
       rescue
         return nil
       end
@@ -20,7 +20,9 @@ module VideoMetadata
         :plot => info[:plot],
         :year => info[:year].to_s,
         :coverart => info[:small_image],
-        :imdbid => value
+        :imdbid => value,
+        :runtime => info[:runtime],
+        :raw => info
       }        
     end    
   end

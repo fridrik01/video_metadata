@@ -49,7 +49,9 @@ module VideoMetadata
           :plot => info.overview,
           :year => year,
           :coverart => coverart,
-          :imdbid => info.imdb_id
+          :imdbid => info.imdb_id,
+          :runtime => info.runtime,
+          :raw => info
         }
       end
   end

@@ -19,6 +19,7 @@ class TVDBTest < Test::Unit::TestCase
         assert_equal "2008", @series[:year]
         assert_equal true, @series[:is_parent]
         assert_equal "http://thetvdb.com/banners/posters/83232-1.jpg", @series[:coverart]
+        assert_equal 30, @series[:runtime]
       end
       
        should "contain invalid valid metadata" do

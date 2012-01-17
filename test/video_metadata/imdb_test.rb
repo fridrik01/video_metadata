@@ -29,12 +29,13 @@ class IMDBTest < Test::Unit::TestCase
       setup do
         @metadata = VideoMetadata::Lookup::imdb("tt0499549")        
       end
-            
-      should "contain valid metadata" do                
+      
+      should "contain valid metadata" do
         assert_equal "tt0499549", @metadata[:imdbid]
         assert_equal "tt0499549", @metadata[:value]
-        assert_equal "Avatar", @metadata[:title]
-        assert_equal "2009", @metadata[:year]        
+        assert_equal "IMDb - Avatar", @metadata[:title]
+        assert_equal "2009", @metadata[:year]
+        assert_equal 162, @metadata[:runtime]
       end
     
       should "contain nil metadata" do

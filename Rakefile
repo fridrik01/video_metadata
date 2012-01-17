@@ -13,7 +13,7 @@ begin
     
     gem.add_dependency('yayimdbs', '>= 0.1.7')
     gem.add_dependency('tmdb_party', '>= 0.4.1')
-    gem.add_dependency('tvdb_party', '>= 0.3.2')
+    gem.add_dependency('tvdb_party', '~> 0.3.2')
     gem.add_dependency('htmlentities', '>= 4.2.0')    
     gem.add_dependency('rest-client', '>= 1.4.2')    
   end
